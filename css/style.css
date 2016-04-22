@@ -1,5 +1,8 @@
-body{
+@import url(https://fonts.googleapis.com/css?family=Raleway:700|Lato:400,100);
 
+body{
+	font:400 22px/1.36'Lato', sans-serif;
+	color: #fffefe;
 }
 
 /* Typography */
@@ -16,12 +19,19 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	font-size: 24px;
+	line-height: 54px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #222;
+	padding: 0 148px;
+	border: 3px solid #222;
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
-.ba-button:hover{
-
+a.ba-button:hover{
+	border: 3px solid blue;
 }
 
 input[type="text"],
@@ -54,4 +64,360 @@ textarea {
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
+	max-width: 1210px;
+}
+
+
+
+
+
+/* ba-intro */
+.ba-intro {
+	background: url(../img/creative-bg.jpg) no-repeat 50%;
+	background-size: cover;
+	padding: 50px 0 140px;
+	position: relative;
+	min-height: 100vh;
+}
+
+.ba-menu {
+	list-style: none;
+	padding: 0;
+	margin-top: -8px;
+	vertical-align: middle;
+	line-height: 22px;
+	margin-right: 82px;
+}
+
+.ba-menu li {
+	float: left;
+	padding-left: 50px;
+	letter-spacing: px;
+}
+
+
+.ba-menu li:first-child {
+	padding-left: 0px;
+}
+
+
+.ba-menu li a {
+	display: block;
+	text-decoration: none;
+	color:  #fffffe;
+	font: 500 14px/2.86 'Lato', sans-serif;
+	text-align: left;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.ba-menu a:hover {
+	color: #15b1f9;
+}
+
+.ba-creative__title {
+	font: 700 48px/1.25 'Raleway', sans-serif;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-left: 5px;
+	padding: 0;
+	position: relative;
+
+}
+
+.ba-services__title,
+.ba-work__title,
+.ba-contacts__title {
+	font: 700 35px/1.71 'Raleway', sans-serif;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.ba-creative__text {
+	max-width: 596px;
+	margin: 0 auto;
+	margin-top: 80px;
+	letter-spacing: 1px;
+
+}
+
+.ba-creative {
+	padding: 252px 0;
+
+
+}
+
+.ba-logo img {
+	display: block;
+
+}
+
+.ba-creative__title:after,
+.ba-services__title:after,
+.ba-work__title:after,
+.ba-contacts__title:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-bottom: -40px;
+	margin-left: -45px;
+	height: 2px;
+	width: 86px;
+	background-color: #fff;
+}
+
+.ba-intro__button {
+	display: block;
+	height: 92px;
+	width: 92px;
+	/* margin: 0 auto; */
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 45px;
+	background: url(../img/arrow.png) no-repeat 50%;
+	transition: all .3s ease-in;
+}
+
+.ba-intro__button:hover {
+	height: 110px;
+	width: 110px;
+
+}
+/* ba services */
+
+.ba-services {
+	color: #222;
+	padding-top: 70px;
+	padding-bottom: 110px;
+}
+
+.ba-services__title {
+	text-transform: uppercase;
+	font: 700 35px/1.71 'Raleway',sans-serif;
+	letter-spacing: 1px;
+	margin-left: 15px;
+	position: relative;
+}
+
+.ba-services__title:after {
+	background-color: #222;
+	margin-bottom: -60px;
+}
+
+.ba-item {
+	padding-top: 121px;
+	position: relative;
+}
+
+.ba-item--app {
+	background: url(../img/services-app.jpg) no-repeat 50% 35%;
+}
+
+.ba-item--responsive {
+	background: url(../img/services-responsive.jpg) no-repeat 50% 40%;
+}
+
+.ba-item--pixel {
+	background: url(../img/services-pixel.jpg) no-repeat 50% 40%;
+}
+
+
+
+.ba-item__title {
+	font-size: 24px;
+	line-height: 1;
+	font-weight: 400;
+	padding-top: 80px;
+	margin: 90px 0 31px 0;
+
+}
+
+.ba-item p {
+	font-size: 16px;
+	line-height: 1.875;
+	max-width: 317px;
+	margin: 0 auto;
+}
+
+/* about */
+
+.ba-about {
+	background-color: #343434;
+	background:	url(../img/about-bg.jpg) 50% no-repeat;
+	background-size: cover;
+
+}
+.ba-about__container {
+	background: url(../img/about-phone.png) 88% 100% no-repeat;
+}
+.ba-about__text {
+	max-width: 570px;
+	padding: 160px 0 111px ;
+}
+
+.ba-about__title {
+	text-transform: uppercase;
+	font-size: 45px;
+	line-height: 1.33;
+	font-weight: 400;
+	margin: 0;
+	letter-spacing: 1px;
+}
+.ba-about__text p {
+	font-size: 22px;
+	line-height: 1.27;
+	max-width: 520px;
+	font-weight: 100;
+	margin: 0 0 56px;
+}
+.ba-about__link {
+	color:  #ffffff;
+	font-size: 18px;
+	line-height: 1.55;
+}
+.ba-about__link:hover {
+	color: #15b1f9;
+}
+
+/* work */
+
+.ba-work {
+	padding-bottom: 50px;
+	padding-top: 75px;
+}
+.ba-work__title {
+	color: #222;
+	margin-bottom: 150px;
+
+
+}
+.ba-work__title:after {
+	background-color: #222;
+	margin-bottom: -60px;
+}
+.ba-work__examples {
+	margin-bottom: 70px;
+}
+.ba-work__box {
+	position: relative;
+}
+.ba-work__box:hover .ba-work__mask {
+	opacity: 1;
+}
+.ba-work__box img {
+	display: block;
+	width: 100%;
+}
+.ba-work__mask {
+	background: rgba(0, 0, 0, .7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity .3s ease-in;
+}
+.ba-work__subtitle {
+	font-size: 22px;
+	font-weight: 400;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	width: 100%;
+	padding-bottom: 82px;
+	color: #fff;
+	text-transform: uppercase;
+	background: url(../img/work-link.png) 50% 100% no-repeat;
+}
+
+/* contacts */
+
+.ba-contacts {
+	background: #040708 url(../img/contacts-bg.jpg) 50% no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding-bottom: 120px;
+
+}
+
+.ba-contacts__title {
+	margin-bottom: 69px;
+	padding-top: 102px;
+}
+
+.ba-contacts__title:after {
+	margin-bottom: -60px;
+}
+.ba-social {
+	margin-top: 130px;
+	margin-bottom: 56px;
+}
+.ba-social__link {
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	margin: 0 10px;
+}
+.ba-social__link--tw {
+	background: url(../img/icons/tw.png) no-repeat 50% 100%;
+}
+.ba-social__link--fac {
+	background: url(../img/icons/facebook.png) no-repeat 50% 100%;
+}
+.ba-social__link--lin {
+	background: url(../img/icons/linkedin.png) no-repeat 50% 100%;
+}
+.ba-social__link--v {
+	background: url(../img/icons/v.png) no-repeat 50% 100%;
+}
+.ba-social__link--be {
+	background: url(../img/icons/be.png) no-repeat 50% 100%;
+}
+.ba-contact-form {
+	max-width: 670px;
+	margin: 0 auto;
+	text-align: center;
+}
+.ba-contact-form__field {
+	background: none;
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 6px 30px;
+	border-bottom: 2px solid #afafaf;
+	font-size: 18px;
+	line-height: 2.22;
+}
+.ba-contact-form__field--name {
+	margin-right: 40px;
+}
+.ba-contact-form__field--message {
+	width: 100%;
+	margin-top: 87px;
+}
+.ba-contact-form__button {
+	margin-top: 50px;
+	background: none;
+	color: #fff;
+	padding: 0 58px;
+	border-color: #fff;
+}
+
+.ba-contact-form__field:hover {
+	border: 2px solid blue;
+	border-radius: 15px;
+}
+
+.ba-social:hover .ba-social__link  {
+	opacity: .3;
+}
+
+.ba-social .ba-social__link:hover  {
+	opacity: 1;
 }
