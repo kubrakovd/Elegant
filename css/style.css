@@ -112,7 +112,7 @@ textarea {
 }
 
 .ba-menu a:hover {
-	color: #15b1f9;
+	color: blue;
 }
 
 .ba-creative__title {
@@ -279,7 +279,7 @@ textarea {
 	line-height: 1.55;
 }
 .ba-about__link:hover {
-	color: #15b1f9;
+	color: blue;
 }
 
 /* work */
