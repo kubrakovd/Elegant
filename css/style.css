@@ -172,7 +172,6 @@ textarea {
 	display: block;
 	height: 92px;
 	width: 92px;
-	/* margin: 0 auto; */
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
